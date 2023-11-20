@@ -1,0 +1,24 @@
+server:
+  port: 52500
+
+spring:
+  application:
+    name: lioncat-gateway-app
+  profiles:
+    active: @profiles.active@
+
+--- # nacos 配置
+spring:
+  cloud:
+    nacos:
+      # nacos 服务地址
+      server-addr: @nacos.server@
+      discovery:
+        # 注册组
+        group: @nacos.group@
+        namespace: @nacos.namespace@
+      config:
+        # 配置组
+        group: @nacos.group@
+        namespace: @nacos.namespace@
+        file-extension: yaml
