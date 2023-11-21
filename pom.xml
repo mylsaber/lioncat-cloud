@@ -10,7 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>lioncat-module</module>
-        <module>lioncat-base</module>
+        <module>lioncat-common</module>
+        <module>lioncat-api</module>
     </modules>
 
     <properties>
@@ -30,6 +31,8 @@
         <jasypt.version>3.0.5</jasypt.version>
         <redisson.version>3.20.1</redisson.version>
         <satoken.version>1.34.0</satoken.version>
+        <satoken.redis.version>1.37.0</satoken.redis.version>
+        <lioncat.api.version>0.0.1</lioncat.api.version>
     </properties>
 
     <profiles>
@@ -155,6 +158,13 @@
                 <artifactId>sa-token-reactor-spring-boot3-starter</artifactId>
                 <version>${satoken.version}</version>
             </dependency>
+            <!-- Sa-Token 整合 Redis （使用 jackson 序列化方式） -->
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-redis-jackson</artifactId>
+                <version>${satoken.redis.version}</version>
+            </dependency>
+
             <!--         mybatis相关-->
             <dependency>
                 <groupId>com.baomidou</groupId>
@@ -177,6 +187,14 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
                 <version>${druid.version}</version>
+            </dependency>
+            <!-- lioncat-api包版本管理-->
+            <dependency>
+                <groupId>com.mylsaber</groupId>
+                <artifactId>lioncat-api-pom</artifactId>
+                <version>${lioncat.api.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
