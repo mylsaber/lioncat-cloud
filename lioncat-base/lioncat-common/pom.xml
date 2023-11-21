@@ -5,16 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.mylsaber</groupId>
-        <artifactId>lioncat-cloud</artifactId>
+        <artifactId>lioncat-base</artifactId>
         <version>0.0.1</version>
     </parent>
 
-    <artifactId>lioncat-base</artifactId>
-    <packaging>pom</packaging>
-    <description>基础组件</description>
-    <modules>
-        <module>lioncat-common</module>
-    </modules>
+    <artifactId>lioncat-common</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

@@ -33,3 +33,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+lioncat-vue3-console/.vscode
+lioncat-vue3-console/node_modules
+lioncat-vue3-console/dist
