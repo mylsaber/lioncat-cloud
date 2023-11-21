@@ -37,3 +37,5 @@ build/
 lioncat-vue3-console/.vscode
 lioncat-vue3-console/node_modules
 lioncat-vue3-console/dist
+lioncat-vue3-console/auto-imports.d.ts
+lioncat-vue3-console/components.d.ts
