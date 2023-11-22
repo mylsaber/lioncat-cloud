@@ -11,4 +11,11 @@
 
     <artifactId>lioncat-common</artifactId>
     <description>通用组件</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-core</artifactId>
+        </dependency>
+    </dependencies>
 </project>
