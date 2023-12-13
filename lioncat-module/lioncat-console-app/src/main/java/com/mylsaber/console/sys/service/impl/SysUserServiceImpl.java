@@ -17,4 +17,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> implements ISysUserService {
 
+
+    public boolean hasAccount(String account) {
+        SysUser sysUser = this.baseMapper.selectOne(lambdaQuery().eq(SysUser::getAccount, account));
+        return sysUser != null;
+    }
 }

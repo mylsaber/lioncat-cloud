@@ -12,5 +12,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2023-11-22
  */
 public interface ISysUserService extends IService<SysUser> {
-
+    boolean hasAccount(String account);
 }

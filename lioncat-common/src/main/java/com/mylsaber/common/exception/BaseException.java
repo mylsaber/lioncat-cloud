@@ -4,6 +4,9 @@ import cn.hutool.core.util.StrUtil;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * @author jiangdi
+ */
 @Getter
 @Setter
 public class BaseException extends RuntimeException {

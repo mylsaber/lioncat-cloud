@@ -107,6 +107,11 @@
         </dependency>
 
         <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-core</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.mylsaber</groupId>
             <artifactId>lioncat-api-console</artifactId>
         </dependency>
